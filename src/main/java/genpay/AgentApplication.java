@@ -9,17 +9,13 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class AgentApplication {
 
-    private static final Logger log = LoggerFactory.getLogger(
-        AgentApplication.class
-    );
+	private static final Logger log = LoggerFactory.getLogger(AgentApplication.class);
 
-    public static void main(String[] args) {
-        ConfigurableApplicationContext ctx = SpringApplication.run(
-            AgentApplication.class,
-            args
-        );
-        /*for (String name : ctx.getBeanDefinitionNames()) {
-            log.info("Loaded Bean: " + name);
-            }*/
-    }
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx = SpringApplication.run(AgentApplication.class, args);
+		/*
+		 * for (String name : ctx.getBeanDefinitionNames()) { log.info("Loaded Bean: " +
+		 * name); }
+		 */
+	}
 }
